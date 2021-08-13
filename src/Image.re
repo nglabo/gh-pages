@@ -16,12 +16,13 @@ module Styles = {
       borderRadius(`percent(50.0)),
       height(px(256)),
       media("(max-width: 768px)", [height(px(168))]),
+      width(px(256)),
     ]);
 };
 
 [@react.component]
 let make = (~profile: Data.profile) => {
   <section className=Styles.container>
-    <img className=Styles.image src={profile.avatar} />
+    <img alt="Avatar" className=Styles.image src={profile.avatar} />
   </section>;
 };
