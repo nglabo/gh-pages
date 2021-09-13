@@ -15,7 +15,6 @@ module Styles = {
       border(px(6), solid, rgb(81, 78, 105)),
       borderRadius(`percent(50.0)),
       height(px(256)),
-      media("(max-width: 768px)", [height(px(168))]),
       width(px(256)),
     ]);
 };
